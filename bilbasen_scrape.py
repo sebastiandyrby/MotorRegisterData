@@ -1,11 +1,18 @@
+# Importing the SitemapSpider for crawling the webpage.
 from scrapy.spiders import SitemapSpider
 
-class BilbasenSpider(SitemapSpider):
-    name = 'bilbasen_spider'
-    DOWNLOAD_DELAY = 0.2    # 0.2 ms of delay
+# Creating class with relevant extractions properties.
+class BilbasenWebScrape(SitemapSpider):
+    # Naming the spider.
+    name = 'bilbasen'
+    
+    # Defining the sitemap on which URLs are listed.
     sitemap_urls = ['http://www.bilbasen.dk/sitemap_carsLatest.axd']
-
-
+    
+    # Initiaing each iteration with a slight delay to avoid abusing the site's servers.
+    DOWNLOAD_DELAY = 0.2 
+    
+    # Defining properties to be extracted.
     def parse(self, response):
             yield {
                 'make_model': response.xpath('//*[@id="bbVipTitle"]/span/text()').extract_first(),
