@@ -1,5 +1,5 @@
 # MotorRegisterData
-Repository including all coding and data used for my master's thesis on the impact of the Danish car registration tax. 
+Repository including coding for extraction and data used for my master's thesis on the impact of the Danish car registration tax. 
 
 The register data can be downloaded from:
 https://data.virk.dk/datakatalog/skat/koeretoejsdata
@@ -7,7 +7,7 @@ https://data.virk.dk/datakatalog/skat/koeretoejsdata
 # Files included
 1. JavaScript-file for parsing of the large XML file of the Danish Register of Motor Vehicles (_xmlstream.js_, dependencies described in _dependencies.txt_). Code for compiling parsed data is included, although not well written, but it does the trick (_motorreg_read.py_).
 2. Webscraper used for scraping prices and technical characteristics from Bilbasen.dk (_bilbasen_scrape.py_).
-3. Dataset used in the analysis is included. For the raw dataset in csv-format or JSON-format, please feel free to contact me - it was to big to upload here.
+3. Dataset used in the analysis is included (_choice_data.csv_). For the raw dataset in csv-format or JSON-format, please feel free to contact me - it was to big to upload here.
 4. Scraped dataset including prices and various technical characteristics (_bilbasen_scrape.csv_).
 
 # The XML parser
