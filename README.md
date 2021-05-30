@@ -5,7 +5,7 @@ The register data can be downloaded from:
 https://data.virk.dk/datakatalog/skat/koeretoejsdata
 
 # Files included
-1. JavaScript-file for parsing of the large XML file of the Danish Register of Motor Vehicles (_xmlstream.js_, dependencies described in _dependencies.txt_). Code for compilation is included (.
+1. JavaScript-file for parsing of the large XML file of the Danish Register of Motor Vehicles (_xmlstream.js_, dependencies described in _dependencies.txt_).
 2. Webscraper used for scraping prices and technical characteristics from Bilbasen.dk.
 3. Raw-data in JSON-format compiled from the parsing.
 4. Scraped dataset including prices and various technical characteristics.
